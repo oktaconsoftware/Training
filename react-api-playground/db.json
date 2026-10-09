@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Onkar Charate1",
+      "email": "onkar@example1.com",
+      "role": "Admin"
+    },
+    {
+      "id": "2",
+      "name": "Rahul Patil",
+      "email": "rahul@example.com",
+      "role": "Developer"
+    },
+    {
+      "id": "3",
+      "name": "Priya Sharma",
+      "email": "priya@example.com",
+      "role": "Designer"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 55000,
+      "stock": 10
+    },
+    {
+      "id": "2",
+      "name": "Keyboard",
+      "price": 1500,
+      "stock": 25
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
