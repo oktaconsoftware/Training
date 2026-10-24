@@ -1,0 +1,24 @@
+
+CREATE DATABASE react_student_db;
+
+CREATE TABLE students (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) UNIQUE NOT NULL,
+    course VARCHAR(100),
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+
+
+ALTER TABLE students
+    ADD COLUMN IF NOT EXISTS phone VARCHAR(20),
+    ADD COLUMN IF NOT EXISTS qualification VARCHAR(100),
+    ADD COLUMN IF NOT EXISTS college VARCHAR(150),
+    ADD COLUMN IF NOT EXISTS training_mode VARCHAR(30),
+    ADD COLUMN IF NOT EXISTS preferred_batch VARCHAR(80),
+    ADD COLUMN IF NOT EXISTS experience_level VARCHAR(80),
+    ADD COLUMN IF NOT EXISTS message TEXT;
+
+
+SELECT * FROM students;
